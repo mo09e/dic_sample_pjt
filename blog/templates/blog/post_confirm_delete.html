@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <td>{{ post.title }}</td>
+        </tr>
+        <tr>
+            <th>Content</th>
+            <td>{{ post.text }}</td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td>{{ post.date }}</td>
+        </tr>
+    </table>
+    <p>この投稿を削除します。</p>
+    <button type="submit">Delete</button>
+    {% csrf_token %}
+</form>
+{% endblock %}

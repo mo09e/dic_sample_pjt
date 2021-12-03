@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <title>Blog App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="{% url 'blog:post_list' %}">Top</a>
+                <a href="{% url 'blog:post_create' %}">PostCreate</a>
+            </header>
+            <div class="main">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+
+</html>
