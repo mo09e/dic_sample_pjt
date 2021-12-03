@@ -8,15 +8,13 @@
 </head>
 
     <body>
-        <div class="wrapper">
-            <header>
-                <a href="{% url 'blog:post_list' %}">Top</a>
-                <a href="{% url 'blog:post_create' %}">PostCreate</a>
-            </header>
-            <div class="main">
-                {% block content %}
-                {% endblock %}
-            </div>
+        <header>
+            <a href="{% url 'blog:post_list' %}">Top</a>
+            <a href="{% url 'blog:post_create' %}">PostCreate</a>
+        </header>
+        <div class="main">
+            {% block content %}
+            {% endblock %}
         </div>
     </body>
 

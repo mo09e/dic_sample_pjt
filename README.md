@@ -20,7 +20,7 @@ $ touch dic_sample_pjt/local_settings.py
 $ python dic_sample_pjt/get_random_secret_key.py
 SECRET_KEY = 'SECRET_KEYが生成されます'
 ```
-3. ２で作成したシークレットきーを、`local_settings.py`にペーストします。
+3. ２で作成したシークレットキーを、`local_settings.py`にペーストします。
 
 ```python:dic_sample_pjt/local_settings.py
 SECRET_KEY = '新しく生成されたSECRET_KEYをペースト'
